@@ -34,6 +34,10 @@ window.onload = async () => {
     if (word == "" || word == " " || word == "  ") {
       text.classList.add("blank");
     }
+    if (word == "^") {
+      row.classList.add("empty");
+      text.innerText = "";
+    }
     row.append(line, text);
     return row;
   };

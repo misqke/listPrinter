@@ -52,4 +52,6 @@ List Notes:
     The above example will create a category called 'Dairy' with with milk, eggs, butter, and 3 blank
     lines at the end.
 
+  * The ^ character can be used in place of a word to create an extra space of gap.
+
 ---------------------------------------------------
