@@ -101,7 +101,13 @@ window.onload = async () => {
     form.classList.add("hidden");
 
     if (sortCategoriesCheck.checked) {
-      lists = lists.sort((a, b) => (a[0] > b[0] ? 1 : a[0] < b[0] ? -1 : 0));
+      lists = lists.sort((a, b) =>
+        a[0].toUpperCase() > b[0].toUpperCase()
+          ? 1
+          : a[0].toUpperCase() < b[0].toUpperCase()
+          ? -1
+          : 0
+      );
     }
 
     // add first section
